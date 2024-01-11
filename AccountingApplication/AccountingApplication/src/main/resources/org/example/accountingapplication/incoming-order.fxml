@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.accountingapplication.IncomingOrderController">
+   <children>
+      <Label fx:id="orderIDLabel" layoutX="85.0" layoutY="60.0" text="Sipariş ID                :">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderIDDescLabel" layoutX="228.0" layoutY="60.0">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerIDLabel" layoutX="85.0" layoutY="104.0" text="Müşteri ID               :">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerIDDescLabel" layoutX="224.0" layoutY="104.0">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalAmountLabel" layoutX="83.0" layoutY="156.0" text="Toplam tutar (₺)     :">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalAmountDescLabel" layoutX="224.0" layoutY="156.0">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="productsLabel" layoutX="83.0" layoutY="193.0" text="Ürünler                   :">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="productImage1" fitHeight="72.0" fitWidth="72.0" layoutX="223.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="productImage2" fitHeight="72.0" fitWidth="72.0" layoutX="224.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="productImage3" fitHeight="64.0" fitWidth="64.0" layoutX="223.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="productPriceLabel1" layoutX="357.0" layoutY="209.0">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="productPriceLabel2" layoutX="357.0" layoutY="292.0">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="productPriceLabel3" layoutX="357.0" layoutY="396.0">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="601.0" layoutY="56.0" mnemonicParsing="false" onAction="#refreshPane" style="-fx-background-color: #875B5D;" text="Sayfayı yenile" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="textLabel" layoutX="258.0" layoutY="193.0" text="Sipariş kontrolü için sayfayı yenile">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

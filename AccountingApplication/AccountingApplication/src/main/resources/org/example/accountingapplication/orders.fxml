@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.accountingapplication.OrderController">
+   <children>
+      <TableView fx:id="orderTableView" prefHeight="450.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="orderID" prefWidth="187.0" resizable="false" text="Sipariş ID" />
+          <TableColumn fx:id="customerID" prefWidth="187.0" resizable="false" text="Müşteri ID" />
+            <TableColumn fx:id="totalAmount" prefWidth="187.0" resizable="false" text="Toplam tutar (₺)" />
+            <TableColumn fx:id="orderDate" prefWidth="187.0" resizable="false" text="Spariş tarihi" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

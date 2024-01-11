@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.accountingapplication.ProductController">
+   <children>
+      <TableView fx:id="productTableView" prefHeight="450.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="productID" prefWidth="124.0" resizable="false" text="Ürün ID" />
+          <TableColumn fx:id="stock" prefWidth="124.0" resizable="false" text="Stok" />
+            <TableColumn fx:id="price" prefWidth="124.0" resizable="false" text="Fiyat (₺)" />
+            <TableColumn fx:id="cost" prefWidth="124.0" resizable="false" text="Maliyet (₺)" />
+            <TableColumn fx:id="taxAmount" prefWidth="124.0" resizable="false" text="Vergi tutarı (₺)" />
+            <TableColumn fx:id="earning" prefWidth="124.0" resizable="false" text="Kasa (₺)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
